@@ -14,10 +14,26 @@
         width: 446px;
         margin-top: 10px;
     }
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        z-index: 2;
+    }
     &__btns {
-        margin-top: 25px;
+        margin-top: 120px;
+        margin-left: 100px;
         display: flex;
         width: 250px;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 700;
+    }
+    &__btn {
+        &:hover {
+            background-color:#002ead;
+            transition: 0.7s;
+            font-weight: 700;
+        }
     }
     &__link {
         color: #FFFFFF;
