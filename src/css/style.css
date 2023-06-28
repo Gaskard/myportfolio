@@ -1,7 +1,7 @@
 @import url(libs/bootstrap-reboot.min.css);
 .promo {
   min-height: 100vh;
-  width: 1920px;
+  min-width: 1920px;
   position: relative;
   background: url("../img/bg/headerbg.jpg") no-repeat 50%/cover;
   padding-top: 205px;
@@ -63,11 +63,9 @@
 .title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 60px;
 }
 .title_fz14 {
   font-size: 14px;
-  line-height: 21;
   font-weight: 700;
 }
 .title_fz16 {
@@ -75,6 +73,10 @@
   line-height: 24px;
   color: #FFFFFF;
   font-weight: 700;
+}
+.title_fz20 {
+  font-size: 20px;
+  line-height: 30px;
 }
 .title_fz36 {
   font-size: 36px;
@@ -187,7 +189,7 @@
   /* left: -100%; */
   width: 345px;
   height: 100%;
-  background: #4b45aa;
+  background: #4c46aa;
   -webkit-transition: all .6s;
   transition: all .6s;
   padding-top: 140px;
@@ -275,6 +277,185 @@
   opacity: .75;
 }
 
+.about {
+  padding-top: 120px;
+}
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 400px 670px;
+  grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+  grid-auto-rows: minmax(245px, auto);
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  row-gap: 40px;
+}
+.about__photo {
+  grid-row: 1/3;
+}
+.about__photo img {
+  width: 100%;
+}
+.about__title {
+  position: relative;
+  color: black;
+  padding-left: 12px;
+  padding-top: 1px;
+  padding: 1px 0 0 12px;
+}
+.about__title:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #4b45aa;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.about__descr {
+  padding-top: 6px;
+}
+.about__descr .divider {
+  margin: 0;
+}
+.about__text {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.about__skills {
+  display: grid;
+  grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+  grid-auto-rows: 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 20px;
+}
+.about__skills-item {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+.about__skills-circle {
+  position: relative;
+  padding: 15px 0 0 15px;
+}
+.about__skills-circle:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #4b45aa;
+  z-index: -1;
+  top: -25%;
+  left: 75px;
+}
+.about__skills-circle:before {
+  top: 0;
+  left: -2px;
+}
+.about__skills-text {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 18px;
+  width: 200px;
+}
+
+.resume {
+  padding-top: 120px;
+}
+.resume__title {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.resume__title:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #4b45aa;
+  z-index: -1;
+  top: -25%;
+  left: 75px;
+}
+.resume__title:before {
+  top: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.resume__subtitle {
+  text-align: center;
+}
+.resume__wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  -webkit-column-gap: 135px;
+          column-gap: 135px;
+}
+.resume__column-title {
+  position: relative;
+  padding-left: 35px;
+}
+.resume__column-title:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #4c46aa;
+  border-radius: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.resume__column ul {
+  list-style-type: none;
+}
+.resume__column ul li {
+  position: relative;
+}
+.resume__column ul li:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: -16px;
+  left: -25px;
+  background-color: black;
+}
+.resume__item-head {
+  position: relative;
+  padding: 30px 0 0 90px;
+}
+.resume__item-body {
+  padding-left: 43px;
+  margin-top: 12px;
+}
+.resume__item-icon {
+  position: absolute;
+  top: 55px;
+  left: 54px;
+}
+.resume__item-icon:before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #4b45aa;
+  z-index: -1;
+  top: -25%;
+  left: 75px;
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -284,6 +465,13 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  border: 3px solid #4c46aa;
+  margin: 25px auto 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
