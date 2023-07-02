@@ -15,7 +15,6 @@
     }
     &__subtitle {
         position: relative;
-        @include before_circle;
         z-index: 2;
     }
     &__btns {

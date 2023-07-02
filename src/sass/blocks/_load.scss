@@ -1,0 +1,44 @@
+.load {
+    padding-top: 120px;
+    &__title {
+        display: inline;
+        position: relative;
+        @include before_menu;
+        left: 10px;
+        &:before {
+            top: -34%;
+            left: -12px;
+        }
+    }
+    &__percent {
+        position: relative;
+        font-weight: 500;
+        left: 318px;
+        bottom: 21px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 30px;
+        column-gap: 45px;
+    }
+    &__scale {
+        &-full {
+            position: absolute;
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+            z-index: 2;
+        }
+        &-notfull {
+            position: relative;
+            margin-top: 10px;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            z-index: 1;
+        }
+    }
+}
