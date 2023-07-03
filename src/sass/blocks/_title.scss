@@ -23,4 +23,18 @@
         color: #FFFFFF;
         font-weight: 700;
     }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        color: black;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }

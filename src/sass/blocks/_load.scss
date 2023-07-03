@@ -24,6 +24,9 @@
         column-gap: 45px;
     }
     &__scale {
+        position: relative;
+        max-width: 350px;
+        max-height: 14px;
         &-full {
             position: absolute;
             height: 14px;

@@ -9,3 +9,15 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active')
 });
+
+const counters = document.querySelectorAll('.load__percent'),
+    lines = document.querySelectorAll('.load__scale-full');
+
+    console.log(counters);
+
+
+    counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+
+    console.log(lines);
+});
