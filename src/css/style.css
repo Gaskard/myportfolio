@@ -537,8 +537,8 @@
 .load__percent {
   position: relative;
   font-weight: 500;
-  left: 318px;
   bottom: 21px;
+  text-align: end;
 }
 .load__wrapper {
   display: grid;
@@ -599,6 +599,40 @@
 .portfolio__item:hover {
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
+}
+
+.price {
+  padding-top: 60px;
+}
+.price__wrapper {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 340px 340px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__item {
+  width: 340px;
+}
+.price__item h4 {
+  margin-bottom: 0;
+}
+.price__item-head {
+  display: grid;
+  grid-template-columns: 174px 109px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+.price__item-body {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.price__item-cost {
+  text-align: end;
 }
 
 * {

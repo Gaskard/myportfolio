@@ -1,0 +1,29 @@
+.price {
+    padding-top: 60px;
+    &__wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 340px 340px;
+        justify-content: space-between;
+    }
+    &__item {
+        h4 {
+            margin-bottom: 0;
+        }
+        width: 340px;
+        &-head {
+            display: grid;
+            grid-template-columns: 174px 109px;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        &-body {
+            font-weight: 500;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        &-cost {
+            text-align: end;
+        }
+    }
+}
