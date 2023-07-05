@@ -1,6 +1,7 @@
 .price {
     padding-top: 60px;
     &__wrapper {
+        padding: 60px 50px 0 50px;
         padding-top: 60px;
         display: grid;
         grid-template-columns: 340px 340px;
@@ -10,7 +11,18 @@
         h4 {
             margin-bottom: 0;
         }
-        width: 340px;
+        &-service {
+            position: relative;
+            width: 220px;
+            @include before_menu;
+            padding-left: 25px;
+            &:before {
+                border-radius: 15px;
+                width: 15px;
+                height: 15px; 
+                margin-top: 5px;  
+            }
+        }
         &-head {
             display: grid;
             grid-template-columns: 174px 109px;
@@ -21,6 +33,7 @@
             font-weight: 500;
             font-size: 12px;
             margin-top: 5px;
+            margin-left: 26px;
         }
         &-cost {
             text-align: end;

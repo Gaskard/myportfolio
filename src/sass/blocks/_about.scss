@@ -17,8 +17,6 @@
     &__title {
         position: relative;
         color: black;
-        padding-left: 12px;
-        padding-top: 1px;
         padding: 1px 0 0 12px;
         @include before_menu;
     }
