@@ -1,12 +1,10 @@
 .promo {
     min-height: 100vh;
-    min-width: 1920px;
     position: relative;
     background: url('../img/bg/headerbg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     &__text {
         width: 450px;
-        margin-left: -140px;
         text-align: center;
     }
     &__title {

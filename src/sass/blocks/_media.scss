@@ -1,0 +1,111 @@
+@media (max-width: 1350px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 200px 600px;
+            row-gap: 40px;
+            padding: 0 100px 0 50px;
+        }
+    }
+    .sidepanel {
+        display: none;
+    }
+    .promo {
+        min-width: 0;
+        max-width: 1920px;
+        &__subtitle {
+            text-align: start;
+        }
+        &__title {
+            width: 320px;
+            font-size: 35px;
+            text-align: start;
+        }
+        &__text {
+            position: absolute;
+        }
+        &__btns {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 200px 380px;
+        }
+        &__photo {
+            grid-row: 1 / 2;
+        }
+        &__skills {
+            padding-left: 45px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .about {
+        &__wrapper {
+            padding-left: 20px;
+            grid-template: auto / 1fr;
+        }
+        &__photo {
+            display: none;
+        }
+        &__descr {
+            width: 480px;
+        }
+        &__skills {
+            padding-left: 0;
+            column-gap: 0;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 10px;
+        }
+    }
+    .promo {
+        background: url('../img/bg/headerbg.jpg') no-repeat 60%/cover;
+        &__subtitle {
+            width: 300px;
+        }
+        &__title {
+            width: 281px;
+            font-size: 29px;
+            margin-top: 30px;
+        }
+        &__text {
+            width: 100%;
+            position: inherit;
+            margin-left: 30px;
+        }
+    }
+}

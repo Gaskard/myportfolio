@@ -1,14 +1,12 @@
 @import url(libs/bootstrap-reboot.min.css);
 .promo {
   min-height: 100vh;
-  min-width: 1920px;
   position: relative;
   background: url("../img/bg/headerbg.jpg") no-repeat 50%/cover;
   padding-top: 205px;
 }
 .promo__text {
   width: 450px;
-  margin-left: -140px;
   text-align: center;
 }
 .promo__title {
@@ -770,6 +768,130 @@
   font-weight: bold;
 }
 
+.policy {
+  padding-top: 50px;
+}
+.policy h1 {
+  text-align: center;
+}
+.policy h2 {
+  padding-top: 30px;
+  text-align: center;
+}
+.policy p {
+  padding-top: 30px;
+}
+.policy ul {
+  padding-top: 10px;
+}
+
+@media (max-width: 1350px) {
+  .sidepanel {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .about__wrapper {
+    grid-template-columns: 200px 600px;
+    row-gap: 40px;
+    padding: 0 100px 0 50px;
+  }
+
+  .sidepanel {
+    display: none;
+  }
+
+  .promo {
+    min-width: 0;
+    max-width: 1920px;
+  }
+  .promo__subtitle {
+    text-align: start;
+  }
+  .promo__title {
+    width: 320px;
+    font-size: 35px;
+    text-align: start;
+  }
+  .promo__text {
+    position: absolute;
+  }
+  .promo__btns {
+    margin-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .about__wrapper {
+    grid-template-columns: 200px 380px;
+  }
+  .about__photo {
+    grid-row: 1 / 2;
+  }
+  .about__skills {
+    padding-left: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .about__wrapper {
+    padding-left: 20px;
+    grid-template: auto / 1fr;
+  }
+  .about__photo {
+    display: none;
+  }
+  .about__descr {
+    width: 480px;
+  }
+  .about__skills {
+    padding-left: 0;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hamburger {
+    right: 20px;
+  }
+
+  .menu__block {
+    width: 250px;
+    padding-left: 10px;
+  }
+
+  .promo {
+    background: url("../img/bg/headerbg.jpg") no-repeat 60%/cover;
+  }
+  .promo__subtitle {
+    width: 300px;
+  }
+  .promo__title {
+    width: 281px;
+    font-size: 29px;
+    margin-top: 30px;
+  }
+  .promo__text {
+    width: 100%;
+    position: inherit;
+    margin-left: 30px;
+  }
+}
 * {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
