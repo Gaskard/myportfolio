@@ -25,6 +25,7 @@
     }
     &__text, &__social {
         a {
+            cursor: pointer;
             text-decoration: none;
         }
         margin-top: 20px;

@@ -693,6 +693,7 @@
   margin-top: 20px;
 }
 .contacts__text a, .contacts__social a {
+  cursor: pointer;
   text-decoration: none;
 }
 .contacts__link {
@@ -864,6 +865,12 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+
+  .contacts__wrapper {
+    grid-template-columns: auto 585px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -905,6 +912,15 @@
   .price__wrapper {
     padding: 0;
     padding-top: 60px;
+  }
+
+  .contacts__wrapper {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    grid-template-columns: 585px;
+  }
+  .contacts__photo img {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -966,6 +982,24 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .contacts {
+    padding-top: 0;
+  }
+  .contacts__wrapper {
+    padding: 0;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 245px);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .contacts__descr {
+    padding: 90px 10px 0 10px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1023,6 +1057,40 @@
 
   .load__wrapper {
     grid-template-columns: 230px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 300px;
+  }
+  .contacts__btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 220px;
+    line-height: 14px;
+    margin: 0 auto;
+  }
+  .contacts__subtitle {
+    font-size: 30px;
+  }
+  .contacts__form {
+    grid-template: 45px 45px 190px minmax(45px, auto)/1fr;
+  }
+  .contacts__textarea {
+    grid-column: unset;
+    width: 100%;
+  }
+  .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: unset;
+            column-gap: unset;
+    row-gap: 20px;
+  }
+  .contacts__policy {
+    width: 180px;
+    margin: 0 auto;
+    line-height: 18px;
   }
 }
 * {
