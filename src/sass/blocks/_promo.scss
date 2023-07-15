@@ -26,8 +26,8 @@
     }
     &__btn {
         &:hover {
-            background-color:#002ead;
-            transition: 0.7s;
+            scale: 1.2;
+            transition: 0.4s;
             font-weight: 700;
         }
     }
